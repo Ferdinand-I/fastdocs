@@ -7,5 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Renamed project from `fastapi-pages` to `fastdocs`
+
 ### Added
 - Initial project scaffolding

@@ -1,9 +1,10 @@
-# fastapi-pages
+# fastdocs
 
 > ⚠️ Early development — not ready for production use.
 
-A FastAPI plugin that brings product documentation management inside your application.
-Mount it as a sub-app, let your team edit docs in the browser — no git, no redeploy.
+Product documentation ASGI plugin. Mount it inside your existing backend — no separate service, no git workflow for your team.
+
+Let PMs and technical writers edit docs in the browser. Readers get rendered documentation at a configurable route.
 
 ## How it works
 

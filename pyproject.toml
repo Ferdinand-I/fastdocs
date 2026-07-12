@@ -1,14 +1,14 @@
 [project]
-name = "fastapi-pages"
+name = "fastdocs"
 version = "0.1.0"
-description = "FastAPI plugin for in-app product documentation with a built-in browser editor"
+description = "Product documentation ASGI plugin"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
     { name = "Anton Borisov", email = "ivan-kruzenstern@yandex.ru" }
 ]
-keywords = ["fastapi", "documentation", "markdown", "mkdocs", "cms", "plugin"]
+keywords = ["documentation", "markdown", "mkdocs", "asgi", "starlette", "cms", "plugin"]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",
@@ -17,18 +17,19 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
-    "Framework :: FastAPI",
     "Topic :: Documentation",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System",
 ]
 dependencies = [
-    "fastapi>=0.110.0",
+    "starlette>=0.27.0",
+    "aiofiles>=23.0.0",
     "mkdocs>=1.5.0",
     "mkdocs-material>=9.0.0",
 ]
 
 [project.optional-dependencies]
 dev = [
+    "fastapi",
     "httpx",
     "pytest",
     "pytest-asyncio",
@@ -36,8 +37,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Ferdinand-I/fastapi-pages"
-Repository = "https://github.com/Ferdinand-I/fastapi-pages"
+Homepage = "https://github.com/Ferdinand-I/fastdocs"
+Repository = "https://github.com/Ferdinand-I/fastdocs"
 
 [build-system]
 requires = ["hatchling"]
